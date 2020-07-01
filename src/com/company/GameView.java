@@ -22,13 +22,13 @@ public class GameView extends JPanel {
 
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
-        row = (getHeight()/size);
+        row = getHeight()/size;
         column = getWidth()/size;
-
+        
         g.setColor(Color.white);
         for(int i = 0; i < row; i++) {
             for(int j = 0; j < column; j++) {
-                g.drawRect(i * size, j * size, size, size);
+                g.drawRect(j*size, i*size, size, size);
             }
         }
 //        for (int i = 0; i < row; i++){
